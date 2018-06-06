@@ -1,0 +1,15 @@
+while true
+    open origen  READ
+    open destino WRITE
+    position = 0;
+    while bytes = read(origen, buffer)
+           fseek(destino, position)
+           write (destino, buffer, bytes)
+           position+=bytes;
+    end_while
+    close origen
+    close destino
+end_while
+
+
+añsudfhñoasihfoñidshñifhasoid

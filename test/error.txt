@@ -1,0 +1,25 @@
+START image boot process 3: rs rs
+START image boot process 4: ds ds
+START image boot process 5: tty tty
+START image boot process 6: memory mem
+START image boot process 7: log log
+START image boot process 8: vmm vmm
+START image boot process 9: init init
+VMM_START: Tell SYSTASK to boot the processes in the vmid=1 boot image.
+VMM_START: rcode=0
+VMMCMD: rcode=0
+# AT-D1: multiword DMA modes supported: 0 1 2
+AT-D1: Ultra DMA modes supported: 0 1 2
+AT-D1: Ultra DMA mode selected: 2
+AT-D1: AT driver detected VMware Virtual IDE Hard Drive
+Replacing root
+FS:pipe.c:296: proc (33) from endpoint (35572) doesn't match known endpoint (273
+42)
+
+#
+# pwd
+/usr/src/test
+# screendmp > error.txt
+screendmp: No such file or directory
+* screendump > error.txt
+

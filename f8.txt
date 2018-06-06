@@ -1,0 +1,25 @@
+# Data Store (DS) contents dump. (VM0)
+slot -key- flags -val_l1- -val_l2- endpoint
+ 0  900 U-----   131072  7860224        0
+ 1 210F0154 UP-T--        1       15    71090 p_vmname=MINIX1 nr=538999152 ep=14
+14678870 flags=154 name=at_wini
+ path=OOT_LOADED  TASK_LEVEL  DONOT_NTFY;
+};
+oxy/loadvmimg";
+        boot_image  "/boot/MYMINIX.img";
+        boot_bitmap 0xFFFFFFFF;
+        process at_wini  PROMISCUOUS_PROC_TYPE   EXEC_LOADED   TASK_LEVEL  EXEC_
+NTFY;
+        device  at_wini VDEV_DISK_MINOR 10;
+#       process pm  REAL_PROC_TYPE 0R
+
+ 2 310F0101 UP--D-        1       15    71090 d_vmname=MINIX1 d_name=at_wini d_t
+ype=101
+ 3 706F6C66 UPV--- 1886350438 538999152    71090  name=MINIX1 vmid=1886350438 si
+ze=64 tokens=1598832981 boot_bm=7FFFFFFF
+        bootprog=/usr/src/proxy/loadvmimg
+        bootimage=/boot/MYMINIX.img
+
+
+# screendump > f8.txt
+

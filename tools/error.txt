@@ -1,0 +1,72 @@
+"proc.c", line 885: (strict) dubious conversion based on equal size
+"do_vmmreq.c", line 48: (strict) garbage following #ifdef <identifier>
+"do_vmmreq.c", line 403: (strict) incompatible pointers in =
+"do_vmmreq.c", line 422: (strict) incompatible pointers in =
+"main.c", line 60: (warning) implicit declaration of function _mhdebug
+"main.c", line 145: (warning) implicit declaration of function _mhdebug
+"main.c", line 196: (warning) implicit declaration of function _mhdebug
+"main.c", line 262: (warning) implicit declaration of function _mhdebug
+"main.c", line 311: (warning) implicit declaration of function _mhdebug
+"main.c", line 615: (warning) implicit declaration of function _mhdebug
+"main.c", line 629: (warning) implicit declaration of function _mhdebug
+"main.c", line 683: (warning) implicit declaration of function _mhdebug
+"forkexit.c", line 62: (warning) implicit declaration of function _mhdebug
+"exec.c", line 100: (warning) implicit declaration of function _mhdebug
+"alloc.c", line 77: (warning) implicit declaration of function _mhdebug
+"alloc.c", line 246: (warning) implicit declaration of function _mhdebug
+"main.c", line 123: (warning) implicit declaration of function _mhdebug
+"main.c", line 241: (warning) implicit declaration of function _mhdebug
+"main.c", line 262: (warning) implicit declaration of function _mhdebug
+"device.c", line 48: (warning) implicit declaration of function _mhdebug
+"mount.c", line 41: (warning) implicit declaration of function _mhdebug
+"super.c", line 220: (warning) implicit declaration of function _mhdebug
+"main.c", line 65: (warning) implicit declaration of function _mhdebug
+"main.c", line 138: (warning) implicit declaration of function _mhdebug
+"main.c", line 98: (warning) implicit declaration of function _mhdebug
+"store.c", line 92: (strict) illegal conversion of pointer to int
+"store.c", line 92: (strict) illegal conversion of pointer to int
+"ds_test.c", line 23: (warning) mproc redeclared static
+"ds_test.c", line 40: (warning) implicit declaration of function _mhdebug
+"ds_test.c", line 118: (strict) illegal conversion of long to pointer
+"ds_test.c", line 180: (warning) implicit declaration of function _mhdebug
+"ds_test.c", line 195: (warning) find_param is already declared static
+"ds_test.c", line 196: (strict) missing or illegal qualifiers
+"ds_test.c", line 202: (warning) implicit declaration of function _mhdebug
+"ds_test.c", line 213: (warning) implicit declaration of function _mhdebug
+"init.c", line 83: (warning) implicit declaration of function _mhdebug
+"driver.c", line 138: (warning) implicit declaration of function _mhdebug
+"driver.c", line 156: (warning) implicit declaration of function _mhdebug
+"driver.c", line 159: (warning) implicit declaration of function _mhdebug
+"driver.c", line 207: (warning) implicit declaration of function _mhdebug
+"driver.c", line 285: (warning) implicit declaration of function _mhdebug
+"driver.c", line 288: (warning) implicit declaration of function _mhdebug
+"driver.c", line 303: (warning) implicit declaration of function _mhdebug
+"drvlib.c", line 87: (warning) implicit declaration of function _mhdebug
+"tty.c", line 183: (warning) implicit declaration of function _mhdebug
+"tty.c", line 883: (warning) implicit declaration of function _mhdebug
+"tty.c", line 1636: (warning) implicit declaration of function _mhdebug
+"tty.c", line 1699: (warning) implicit declaration of function _mhdebug
+"console.c", line 901: (warning) implicit declaration of function _mhdebug
+"console.c", line 1084: (warning) implicit declaration of function _mhdebug
+"console.c", line 1105: (warning) implicit declaration of function _mhdebug
+"console.c", line 1257: (warning) implicit declaration of function _mhdebug
+"console.c", line 1273: (warning) implicit declaration of function _mhdebug
+"console.c", line 1370: (warning) implicit declaration of function _mhdebug
+"console.c", line 1505: (warning) implicit declaration of function _mhdebug
+"keyboard.c", line 603: (warning) implicit declaration of function _mhdebug
+"keyboard.c", line 625: (warning) implicit declaration of function _mhdebug
+"keyboard.c", line 645: (warning) implicit declaration of function _mhdebug
+"keyboard.c", line 652: (warning) implicit declaration of function _mhdebug
+"at_wini.c", line 410: (warning) implicit declaration of function _mhdebug
+"at_wini.c", line 486: (warning) implicit declaration of function _mhdebug
+"at_wini.c", line 692: (warning) implicit declaration of function _mhdebug
+"at_wini.c", line 768: (warning) implicit declaration of function _mhdebug
+"at_wini.c", line 1001: (warning) implicit declaration of function _mhdebug
+"at_wini.c", line 1243: (warning) implicit declaration of function _mhdebug
+"floppy.c", line 281: (strict) incompatible pointers in =
+"floppy.c", line 301: (warning) implicit declaration of function _mhdebug
+"floppy.c", line 425: (warning) implicit declaration of function _mhdebug
+"log.c", line 67: (warning) implicit declaration of function _mhdebug
+"main.c", line 49: (warning) implicit declaration of function _mhdebug
+"memory.c", line 84: (warning) implicit declaration of function _mhdebug
+"memory.c", line 288: (warning) implicit declaration of function _mhdebug

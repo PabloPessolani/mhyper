@@ -1,0 +1,25 @@
+forkexit.c:288 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=23 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=221 wpid=-1
+forkexit.c:288 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=23 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=83 endpoint=35620 flags=221 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=83 endpoint=35620 flags=221 wpid=-1
+forkexit.c:288 pm_vmid=1 name=sh pid=83 endpoint=35620 flags=23 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=221 wpid=-1
+forkexit.c:288 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=23 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=221 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=83 endpoint=35620 flags=221 wpid=-1
+forkexit.c:288 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=23 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=83 endpoint=35620 flags=221 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=221 wpid=-1
+forkexit.c:288 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=23 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=84 endpoint=35621 flags=221 wpid=-1
+forkexit.c:315 pm_vmid=1 name=sh pid=11 endpoint=35548 flags=221 wpid=-1
+forkexit.c:315 pm_vmid=1 name=init pid=1 endpoint=8 flags=221 wpid=-1
+PM panic (signal.c): couldn't get new stack pointer (for sig): 1
+#
+#
+#
+# pwd
+/usr/src/test
+# screendump > panic.txt
+

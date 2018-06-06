@@ -1,0 +1,25 @@
+   Shift+F8.  Data store contents
+
+
+# IRQ policies dump shows use of kernel's IRQ hooks. (VM0)
+vmid -h.id- -proc.nr- -IRQ vector (nr.)- -policy- -notify id-
+   0  0         5          rs232 (04)   reenable   4
+   0  1         5       keyboard (01)   reenable   1
+   0  2         5                (12)   reenable   12
+   0  3     35552         floppy (06)       -      6
+   0  4     35555      at_wini_0 (14)   reenable   14
+   0  5     35589                (09)       -      9
+   0  6     35555      at_wini_0 (14)   reenable   14
+   0  7    <unused>
+   0  8    <unused>
+   0  9    <unused>
+   0 10    <unused>
+   0 11    <unused>
+   0 12    <unused>
+   0 13    <unused>
+   0 14    <unused>
+   0 15    <unused>
+
+
+# screendump > borrar.txt
+

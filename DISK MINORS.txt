@@ -1,0 +1,68 @@
+
+/dev/c0d0 		0
+/dev/c0d0p0 		1 
+/dev/c0d0p1 		2
+/dev/c0d0p2 		3 
+/dev/c0d0p3 		4
+
+/dev/c0d1 		5
+/dev/c0d1p0 		6 ----- minor
+/dev/c0d1p1 		7
+/dev/c0d1p2 		8
+/dev/c0d1p3 		9
+
+/dev/c0d2 		10
+/dev/c0d2p0 		11
+/dev/c0d2p1 		12
+/dev/c0d2p2 		13
+/dev/c0d2p3 		14
+
+/dev/c0d3 		15
+/dev/c0d3p0 		16
+/dev/c0d3p1 		17
+/dev/c0d3p2 		18
+/dev/c0d3p3 		19
+
+/dev/c0d0p0s0		128 <<<<<<<<<<<<<
+/dev/c0d0p0s1		129
+/dev/c0d0p0s2		130 ------- virt_minor
+/dev/c0d0p0s3		131
+
+/dev/c0d0p1s0		132
+/dev/c0d0p1s1		133
+/dev/c0d0p1s2		134
+/dev/c0d0p1s3		135
+
+/dev/c0d0p2s0		136
+/dev/c0d0p2s1		137
+/dev/c0d0p2s2		138
+/dev/c0d0p2s3		139
+
+/dev/c0d0p3s0		140
+/dev/c0d0p3s1		141
+/dev/c0d0p3s2		142
+/dev/c0d0p3s3		143
+
+/dev/c0d1p0s0		144 <<<<<<<<<<<<<
+/dev/c0d1p0s1		145
+/dev/c0d1p0s2		146 
+/dev/c0d1p0s3		147
+
+/dev/c0d1p1s0		148
+/dev/c0d1p1s1		149
+/dev/c0d1p1s2		150 
+/dev/c0d1p1s3		151
+
+/dev/c0d1p2s0		152
+/dev/c0d1p2s1		153
+/dev/c0d1p2s2		154 ------- real_minor
+/dev/c0d1p2s3		155
+
+/dev/c0d1p3s0		156
+/dev/c0d1p3s1		157
+/dev/c0d1p3s2		158 
+/dev/c0d1p3s3		159
+
+
+
+

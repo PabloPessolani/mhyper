@@ -1,0 +1,25 @@
+boot_image=/boot/MYMINIX.img
+read_lines type=200
+search_ident[0] line=7 word=boot_bitmap
+line[7] MATCH identifier boot_bitmap
+boot_bitmap=7FFFFFFF
+read_lines type=200
+search_ident[0] line=8 word=process
+line[8] MATCH identifier process
+process=at_wini
+        PROMISCUOUS_PROC_TYPE
+        EXEC_LOADED
+        TASK_LEVEL
+        EXEC_NTFY
+search_vm_config search_machine rcode=151008
+search_vm_config[1] line=15
+machine machineTKN_MACHINE MINIX2
+search_vm_config search_machine rcode=2
+search_vm_config[2] line=28
+machine machineTKN_MACHINE MINIX3
+search_vm_config search_machine rcode=2
+Configuration File error for VM MINIX1
+
+[1] 125 Exit 1                ./vmmcmd LOAD MINIX1
+# screendump > borrar
+

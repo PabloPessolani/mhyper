@@ -1,0 +1,71 @@
+"mhved.c", line 368: (warning) implicit declaration of function _mhdebug
+"mhved.c", line 409: (warning) implicit declaration of function TEST_BIT
+"mhved.c", line 479: (strict) incompatible pointers in =
+"mhved.c", line 524: illegal use of selector mode
+"mhved.c", line 618: fewer parameters than specified in prototype
+"mhved.c", line 632: incorrect type for parameter ec
+"mhved.c", line 632: incorrect number of parameters
+"mhved.c", line 639: ecp undefined
+"mhved.c", line 732: i undefined
+"mhved.c", line 734: mac_addr_base undefined
+"mhved.c", line 737: mac_addr_base undefined
+"mhved.c", line 753: tx_slot_nr undefined
+"mhved.c", line 753: cur_tx_slot_nr undefined
+"mhved.c", line 754: TX_RING_SIZE undefined
+"mhved.c", line 755: lp undefined
+"mhved.c", line 756: isstored undefined
+"mhved.c", line 760: rx_slot_nr undefined
+"mhved.c", line 761: RX_RING_SIZE undefined
+"mhved.c", line 762: lp undefined
+"mhved.c", line 763: erroneous operand to |=
+"mhved.c", line 780: tx_slot_nr undefined
+"mhved.c", line 780: cur_tx_slot_nr undefined
+"mhved.c", line 781: TX_RING_SIZE undefined
+"mhved.c", line 782: lp undefined
+"mhved.c", line 783: isstored undefined
+"mhved.c", line 787: rx_slot_nr undefined
+"mhved.c", line 788: RX_RING_SIZE undefined
+"mhved.c", line 789: lp undefined
+"mhved.c", line 790: erroneous operand to |=
+"mhved.c", line 832: reply_mess undefined
+"mhved.c", line 888: lp undefined
+"mhved.c", line 888: rx_slot_nr undefined
+"mhved.c", line 920: erroneous operand to |=
+"mhved.c", line 922: RX_RING_MOD_MASK undefined
+"mhved.c", line 943: reply_mess undefined
+"mhved.c", line 952: -> applied to struct
+"mhved.c", line 1023: unknown selector iovp
+"mhved.c", line 1026: unknown selector br_free
+"mhved.c", line 1027: illegal use of selector br_free
+"mhved.c", line 1028: (warning) implicit declaration of function SET_BIT
+"mhved.c", line 1033: call of non-function (pointer)
+"mhved.c", line 1040: r undefined
+"mhved.c", line 1044: illegal use of selector iovp
+"mhved.c", line 1044: illegal use of selector iovp
+"mhved.c", line 1044: illegal use of selector iovp
+"mhved.c", line 1044: (strict) illegal conversion of pointer to int
+"mhved.c", line 1048: unknown selector f_addr
+"mhved.c", line 1054: illegal use of selector iovp
+"mhved.c", line 1066: (warning) implicit declaration of function CLR_BIT
+"mhved.c", line 1088: (warning) implicit declaration of function SET_BIT
+"mhved.c", line 1094: illegal use of selector iovp
+"mhved.c", line 1097: illegal use of selector iovp
+"mhved.c", line 1098: illegal use of selector iovp
+"mhved.c", line 1101: r undefined
+"mhved.c", line 1104: unknown selector fdata
+"mhved.c", line 1104: illegal use of selector iovp
+"mhved.c", line 1104: illegal use of selector iovp
+"mhved.c", line 1116: (warning) implicit declaration of function CLR_BIT
+"mhved.c", line 1119: } not expected
+"mhved.c", line 1349: (warning) static function vnet_switch never defined, changed to extern
+"mhved.c", line 1349: (warning) static function mhved_init_card never defined, changed to extern
+"mhved.c", line 1349: (warning) static function mhved_probe never defined, changed to extern
+"mhved.c", line 1349: (warning) static function do_getname never defined, changed to extern
+"mhved.c", line 1349: (warning) static function do_stop never defined, changed to extern
+"mhved.c", line 1349: (warning) static function put_userdata never defined, changed to extern
+"mhved.c", line 1349: (warning) static function do_getstat never defined, changed to extern
+"mhved.c", line 1349: (warning) static function ec_next_iovec never defined, changed to extern
+"mhved.c", line 1349: (warning) static function calc_iovec_size never defined, changed to extern
+"mhved.c", line 1349: (warning) static function ec_nic2user never defined, changed to extern
+"mhved.c", line 1349: (warning) static function ec_user2nic never defined, changed to extern
+make in /usr/src/drivers/mhved: Exit code 1

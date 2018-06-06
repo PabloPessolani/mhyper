@@ -1,0 +1,37 @@
+"loadvmimg.c", line 73: making function body for non-function
+"loadvmimg.c", line 73: n_procs not in parameter list
+"loadvmimg.c", line 74: process not in parameter list
+"loadvmimg.c", line 77: img not in parameter list
+"loadvmimg.c", line 92: running_vm not in parameter list
+"loadvmimg.c", line 95: fp not in parameter list
+"loadvmimg.c", line 95: fp1 not in parameter list
+"loadvmimg.c", line 96: m not in parameter list
+"loadvmimg.c", line 97: m_ptr not in parameter list
+"loadvmimg.c", line 100: proc not in parameter list
+"loadvmimg.c", line 102: clck_shft not in parameter list
+"loadvmimg.c", line 103: click_size not in parameter list
+"loadvmimg.c", line 104: k_flags not in parameter list
+"loadvmimg.c", line 105: dyn_size not in parameter list
+"loadvmimg.c", line 106: vsec not in parameter list
+"loadvmimg.c", line 107: boot_params not in parameter list
+"loadvmimg.c", line 108: prtbuf not in parameter list
+"loadvmimg.c", line 117: (warning) main is a function; cannot be formal
+"loadvmimg.c", line 117: main not in parameter list
+"loadvmimg.c", line 118: (warning) no_driver is a function; cannot be formal
+"loadvmimg.c", line 118: no_driver not in parameter list
+"loadvmimg.c", line 119: (warning) no_init is a function; cannot be formal
+"loadvmimg.c", line 119: no_init not in parameter list
+"loadvmimg.c", line 176: (warning) proxy_13 is a function; cannot be formal
+"loadvmimg.c", line 176: proxy_13 not in parameter list
+"loadvmimg.c", line 177: (warning) init_13 is a function; cannot be formal
+"loadvmimg.c", line 177: init_13 not in parameter list
+"loadvmimg.c", line 254: init_vec not in parameter list
+"loadvmimg.c", line 254: illegal initialization of formal parameter
+"loadvmimg.c", line 450: driver_vec not in parameter list
+"loadvmimg.c", line 450: illegal initialization of formal parameter
+"loadvmimg.c", line 647: priv_tab not in parameter list
+"loadvmimg.c", line 648: virtual_bm not in parameter list
+"loadvmimg.c", line 657: (warning) get_imagetab is a function; cannot be formal
+"loadvmimg.c", line 657: get_imagetab not in parameter list
+"loadvmimg.c", line 657: { not expected
+make in /usr/src/proxy: Exit code 1

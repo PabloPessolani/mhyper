@@ -1,0 +1,102 @@
+Emilio:
+	La VM que te paso tiene 2 discos.  
+	- El IDE 0.0 llamado MHYPER.vmdk que corresponde al dispositivo MINIX /dev/c0d0 
+	- El IDE 0.1 llamado MHYPER1.vmdk  que corresponde al dispositivo MINIX /dev/c0d1
+	
+1) Probar que MINIX funcione bien.
+Al bootear seleccionar opcion 1 para que bootee con MINIX.
+Vas a notar que tira el mensaje 
+	"RUNNING MINIX"
+Esto quiere decir que arrancara TODOS los drivers y servidores de MINIX
+Probar que funcione correctamente el FTP 
+
+2) Probar que MHYPER funcione bien
+Al bootear seleccionar opcion 3 para que bootee con MHYPER.
+Vas a notar que tira el mensaje 
+	"RUNNING MHYPER"
+Esto quiere decir que NO SE arrancaran TODOS los drivers y servidores
+NO SE ARRANCAN  los drivers y servidors relacionados con la red. 
+
+cd /usr/src/tools
+./vmmcmd LOAD MINIX1 &
+./vmmcmd START MINIX1 32
+
+Si te parece que se cuelga porque demora mucho, no te asombres, es por los logs.
+de todos modos para corroborarlo, pasate a la VM0 (ALT-ABAJO) y ejecuta el comando "top"
+vas a ver si VM1 se esta ejecutando.
+
+Una vez presentado el login: damos por satisfecho el funcionamiento.
+
+3) Proxy AT_WINI
+
+En el directorio /usr/src/proxy segui los pasos del README.txt
+
+libproxy.h 
+==========
+/* #define PROXY_12 1 */
+#define PROXY_13 1 		/* FLOPPY DRIVER */
+/* #define PROXY_14 1 */
+/* #define PROXY_15 1 */
+#define PROXY_16 1 		/* AT_WINI DRIVER */
+/* #define PROXY_17 1 */
+
+Makefile 
+========
+OBJ= loadvmimg.o libproxy.o floppy.o at_wini.o
+....
+at_wini:		at_wini.c libproxy.h glo.h
+
+Luego hace 
+# cp floppy.c at_wini.c
+y comenza a modificarlo
+
+Reemplaza todo donde diga "floppy" por "at_wini"
+
+Este es el archivo que vas a utilizar como disco virtual. Es el disco IDE 0.1
+fp_at_wini = fopen("/dev/c0d1","r+");  
+r+: Open for reading and writing. The stream is positioned at the beginning of the file
+
+IMPORTANTE
+==========
+
+1) Modifica el /usr/src/kernel/drivers.h, para decirle que es virtual
+
+ { "at_wini"  ,	VIRTUAL_PROC_TYPE | EXEC_LOADED | TASK_LEVEL | DONOT_NTFY },
+ 
+ Recompila el kernel
+ cd /usr/src/tools
+ make clean
+ make hdboot
+  
+2) Modifica el /etc/vmm.cfg creandote otra descripcion de VM. En el ejemplo "CONAIISI"
+Aqui anulamos la configuracion original de at_wini
+
+# this is a comment 
+machine CONAIISI {
+	size		64;
+#	tokens	32;
+	boot_prog	"/usr/src/proxy/loadvmimg";
+	boot_image  "/boot/MYMINIX.img";
+	boot_bitmap 0xFFFFFFFF;
+#	process at_wini  PROMISCUOUS_PROC_TYPE   EXEC_LOADED   TASK_LEVEL  EXEC_NTFY;
+#	device  at_wini VDEV_DISK_MINOR 5;
+#	process pm  REAL_PROC_TYPE  BOOT_LOADED  SERVER_LEVEL  DONOT_NTFY;
+#	process fs REAL_PROC_TYPE   BOOT_LOADED  SERVER_LEVEL  DONOT_NTFY;
+#	process tty	PROMISCUOUS_PROC_TYPE  BOOT_LOADED  TASK_LEVEL  BOOT_NTFY;
+#	process floppy  VIRTUAL_PROC_TYPE   BOOT_LOADED  TASK_LEVEL  DONOT_NTFY;
+};
+
+OJO: Cuando arranques la VM deberas hacer
+cd /usr/src/tools
+./vmmcmd LOAD CONAIISI &
+./vmmcmd START CONAIISI 32
+
+
+
+
+
+
+
+
+
+

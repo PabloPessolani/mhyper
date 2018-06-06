@@ -1,0 +1,48 @@
+=================
+PARA MINIX 3.1.2
+==================
+Crear un nuevo disco virtual lo suficientemente grande (8 Gb)
+
+Incluirlo en la VM como IDE 0,1
+
+Arrancar MINIX
+
+Particionar el disco 
+
+fdisk /dev/c0d1 (Controladora 0, drive 1)
+
+Tomar nota de la cantidad de cilindros (963X255X63)
+
+utilizar c para cambiar una particion
+
+Crear 3 particiones por lo menos de 300 pistas cada una
+ATENCION: CON UNA PARTICION ES SUFICIENTE
+porque en realidad crea 3 subparticiones
+/dev/c0d1p0 para /usr 
+/dev/c0d1p1 para /tmp
+/dev/c0d1p2 para /
+
+grabar la tabla de particiones con w
+
+
+ATENCION: el release.sh toma el kernel de /boot/image_big por lo tanto
+hay que hacer
+# rm /boot/image_big
+# ln /boot/image/3.1.2xxxxxx /boot/image_big
+
+luego en /usr/src/tools ejecutar
+
+./release.sh -c -p  (-c que se creara desde el disco y no del repositorio, -p no incluira los paquetes)
+
+aqui pide dos devices donde trabajara para crear la imagen del CD
+
+/dev/c0d1p0 para /usr 
+/dev/c0d1p1 para /tmp
+/dev/c0d1p2 para /
+
+
+
+
+
+
+

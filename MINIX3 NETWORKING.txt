@@ -1,0 +1,70 @@
+MINIX3 NETWORKING SETUP
+
+
+On MINIX start-up, it runs /etc/rc from the MEMORY root device built with the minimal programs needed.
+Once it loads the AT_WINI , it change the root device to /dev/c0d0p0s0
+
+On /etc/rc, it starts up other drivers and servers, and at the end runs
+/usr/etc/rc 
+/usr/local/etc/rc
+
+The /usr is on /dev/c0d0p0s2
+
+The /usr/etc/rc shell starts ETHERNET drivers and INET server
+		for driver in lance rtl8139 fxp dpeth dp8390
+		do
+			if grep " $driver " /etc/inet.conf > /dev/null  2>&1
+			then 
+				eval arg=\$${driver}_arg
+			if [ ! -z "$arg" ]; then arg="-args \"$arg\""; fi
+				eval up $driver $arg -period 1HZ
+			fi
+		done
+		up inet
+		
+The driver name is get from /etc/inet.conf
+	eth0 lance 0 { default; };
+	
+Therefore, the lance Ethernet driver will be started.
+
+Afterwards, network servers will be started.
+
+DAEMONS=/etc/rc.daemons
+    if [ "$net" ]
+    then
+	if [ -f /etc/rc.net ]
+	then
+	    # Let a customized TCP/IP initialization script figure it out.
+	    echo Let a customized TCP/IP initialization script figure it out.
+	    . /etc/rc.net
+	else
+	    # Standard network daemons.
+    	    echo -n "Starting networking:"
+	    if grep -s 'psip0.*default' /etc/inet.conf 
+	    then	ifconfig -h 10.0.0.1
+	    else	daemonize dhcpd
+	    fi
+	    daemonize nonamed -L
+	    if [ -f "$DAEMONS" ]
+	    then	. "$DAEMONS"
+	    fi
+	    # The last daemon has been started, so close the list:
+	    echo .
+	fi
+    fi
+
+The started daemons are run from /etc/rc.daemons
+#daemonize talkd
+#daemonize tcpd shell in.rshd
+#daemonize tcpd login in.rlogind
+daemonize tcpd telnet in.telnetd
+daemonize tcpd ftp in.ftpd
+
+
+
+
+	
+	
+	
+
+	
